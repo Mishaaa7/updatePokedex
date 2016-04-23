@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" charset="utf-8" content="with=device-width, initial-scale=1.0">
+	<title>Pokedex</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="screen">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='style.css' rel='stylesheet' media="screen">
+
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script src='pokedex.js' type='text/javascript'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="modal" class="modal fade">
+		<div id="info" class="modal-body infoChild">
+	    </div>
+	</div>
+	<div class="container border-container">
+		<div class="row head-block">
+			<div class="col-md-12 ">
+				<p class="textInfo">The Pokédex section has a wealth of information on all the Pokémon creatures from the entire game series.Click a Pokémon's name to see a detailed page with Pokédex data.</p>
+			</div>
+		</div>
+		<div class="row select">
+			<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 top-menu">
+				<p class="textInfo">Select the type of Pokémon</p>
+				
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12 col-lg-6 top-menu">
+				<select id="filtr" onChange="infoLoad(this.value.slice(17)); counterType='change'; sortingCount=0;"></select>
+			</div>
+		</div>
+
+		<div id="container" class="row">
+			<div id="forClick" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div id="click" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" onclick="if (counterType){if(counterType=='end'); else infoLoad(counterType);} else {infoLoad(this.srr);}">Load more</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

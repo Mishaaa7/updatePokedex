@@ -1,0 +1,101 @@
+#click {
+	padding-top: 11px;
+	padding-bottom: 11px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	font-family: fantasy;
+	font-size: 20px;
+	text-align: center;
+	background-color: DeepSkyBlue;
+}
+#forClick {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+#info {
+	margin-top: 50px;
+	margin-left: 100px;
+	width: 260px;
+	height: 400px;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 5px;
+	font-family: 'Zapf Chancery', cursive
+}
+#container {
+	background-color: #FFCCFF;
+}
+#filtr {
+	background: #A3F9FF;
+	width: 268px;
+	font-family: 'Zapf Chancery', cursive
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	height: 34px;
+	text-align: center;
+}
+
+.pokemon {
+	text-align: center;	
+}
+.imagePokemon {
+	width: 120px;
+	height: 120px;
+}
+.divimagePokemon {
+	font-family: 'Zapf Chancery';
+	width: 150px;
+	margin: auto;
+	height: 185px;
+	font-size: 14px;
+	top: 5px;
+	background-color: #EDFEFF;
+}
+.swimmingPokemon{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid gray;
+	border-radius: 5px;	
+	background-color: #EDFEFF;
+}
+.swimmingPokemon:hover{
+	box-shadow: 1px 0px 14px 3px #000000;
+}
+.typePokemon {
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-right: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+table {
+	table-layout: fixed;
+	width: 230px;
+	background-color:#FAFFFF;	
+}
+table:hover {
+	border-color: #F50F2D;
+	box-shadow: -7px -1px 10px 1px #F50F2D;
+}
+td {
+	width: 115px;
+}
+.textInfo {
+	font-family: 'Shadows Into Light', cursive;
+	text-align: center;
+	font-size: 17px;
+}
+.head-block {
+	background-color: #FF33CC;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.top-menu{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.select {
+	background-color: #FF99FF;
+}
