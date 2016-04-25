@@ -64,8 +64,8 @@ function sorting() {
 		pokemon.className = 'pokemon col-xs-6 col-sm-4 col-md-3 col-lg-2';
 		var divImagePokemon = document.createElement('div');
 		divImagePokemon.className = 'divimagePokemon';
-		pokemon.id = answer.pokemon[p].pokemon.url.slice(33, answer.pokemon[p].pokemon.url.length-1);
-		swimmingPokemon.onclick = function () {infoLoad('/api/v1/pokemon/'+pokemon.id)}
+		swimmingPokemon.id = answer.pokemon[p].pokemon.url.slice(33, answer.pokemon[p].pokemon.url.length-1);
+		swimmingPokemon.onclick = function () {infoLoad('/api/v1/pokemon/'+ this.id)}
 		divImagePokemon.appendChild(imagePokemon);
 		divImagePokemon.innerHTML += answer.pokemon[p].pokemon.name.slice(0,1).toUpperCase() + answer.pokemon[p].pokemon.name.slice(1) + '<br>'+'<br>';
 		divImagePokemon.innerHTML += "<span class=typePokemon style=background-color:"+colorType[answer.name]+">"+
@@ -133,9 +133,9 @@ function allPokemon (){
 		var swimmingPokemon = document.createElement('div');
 		swimmingPokemon.className = 'swimmingPokemon';
 		pokemon.className = 'pokemon col-xs-6 col-sm-4 col-md-3 col-lg-2';
-		pokemon.id = answer.objects[i].pkdx_id;
+		swimmingPokemon.id = answer.objects[i].pkdx_id;
 		click.srr = answer.meta.next;
-		swimmingPokemon.onclick = function () {infoLoad('/api/v1/pokemon/'+pokemon.id)};
+		swimmingPokemon.onclick = function () {infoLoad('/api/v1/pokemon/'+ this.id)};
 		divImagePokemon.appendChild(imagePokemon);
 		divImagePokemon.innerHTML += answer.objects[i].name+'<br>'+'<br>';
 		for (var e = 0; e < answer.objects[i].types.length; e++) {
